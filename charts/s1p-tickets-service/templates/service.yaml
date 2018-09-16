@@ -11,6 +11,7 @@ metadata:
     spring-boot: "true"
     s1p: "true"
     tickets: "true"
+    code: "atdi"
 {{- if .Values.service.annotations }}
   annotations:
 {{ toYaml .Values.service.annotations | indent 4 }}

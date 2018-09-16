@@ -1,0 +1,12 @@
+FROM openjdk:8
+ENV PORT 8080
+ENV CLASSPATH /app
+EXPOSE 8080
+
+RUN mkdir /opt/maven
+RUN curl -s -j -k -L "http://www.eu.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz" | tar xz --strip=1 -C "/opt/maven"
+ENV PATH /opt/maven/bin:$PATH
+
+WORKDIR /app
+
+CMD ["mvn", "-Dfork=true",  "spring-boot:run"]

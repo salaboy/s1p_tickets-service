@@ -23,7 +23,12 @@ public class TicketsServiceApplication {
 
     @GetMapping(path = "/tickets")
     public int getAvailableTickets() {
-        return 1000;
+        return 1010;
+    }
+
+    @GetMapping(path = "/ratings")
+    public int getRatings() {
+        return 12;
     }
 
     @Configuration
