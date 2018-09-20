@@ -5,7 +5,7 @@
 
     <groupId>org.spring.cloud.k8s</groupId>
     <artifactId>tickets-service</artifactId>
-    <version>0.0.20</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>tickets-service</name>
